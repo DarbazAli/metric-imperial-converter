@@ -4,6 +4,8 @@
   "description": "Metric Imperial Converter API Endpoint",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
     "test": "mocha"
   },
   "keywords": [
