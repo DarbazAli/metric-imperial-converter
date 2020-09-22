@@ -4,6 +4,7 @@ const log = console.log;
 
 // pull out packages
 const express = require('express');
+const apiRoute = require('./server/api');
 const app = express();
 
 
@@ -29,7 +30,7 @@ app
         res.render('index', {api_url: req.headers.host + '/api/convert'})
     })
 
-
+apiRoute(app);
 
 /* ========================================== 
     LISTEN

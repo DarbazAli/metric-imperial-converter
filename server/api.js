@@ -6,7 +6,7 @@ const ConvertHandler = require('./convertHandler');
 module.exports = app => {
     const convertHandler = new ConvertHandler();
 
-    const { getNum, getUnit, convert, getReturnUnit, toString} = convertHandler();
+    const { getNum, getUnit, convert, getReturnUnit, toString} = convertHandler
 
     app
     .route('/api/convert')
@@ -33,7 +33,7 @@ module.exports = app => {
                 initUnit,
                 returnNum,
                 returnUnit,
-                string
+                string: string
             }
         }
 

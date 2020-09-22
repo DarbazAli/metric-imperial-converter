@@ -78,7 +78,7 @@ function ConvertHandler() {
     };
   
 
-    this.getString = (initNum, initUnit, returnNum, returnUnit) => {
+    this.toString = (initNum, initUnit, returnNum, returnUnit) => {
         return `${initNum} ${this.spellOutUnit(initUnit)} converts to ${returnNum} ${this.spellOutUnit(returnUnit)}`;
     }
   
