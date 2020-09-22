@@ -3,45 +3,48 @@ html(lang="en")
     head
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="/styles/style.css")
         title Metric Imperial Converter
     body
         .container
 
             h1 Metric/Imperial Converter API
-            img(src="/img/github_icon_48px.svg", alt="github icon" class="git_repo")
+            a(href="https://github.com/DarbazAli/metric-imperial-converter")
+                img(src="/img/github_icon_48px.svg", alt="github icon" class="git_repo")
 
             p An API Endpoint to convert Metric to Imperial units and vice versa.
 
-            h3 
+            h3.block 
                 span kg ⇄ lbs     
                 span km ⇄ mi     
                 span l ⇄ gal
 
             h3 API URL
             //- p ~/api/convert
-            p= api_url
+            p.code= api_url
 
-            h3 Examples Request
-            p.
+            h3 Example Request
+            p.code.
                 ~/api/convert?input=4gal <br>
                 ~/api/convert?input=3.5L <br>
                 ~/api/convert?input=1.5/5mi <br>
 
             h3 Example Response
-            p.
-                {
-                    “initNum”: 1,
-                    “initUnit”: “kg”,
-                    “returnNum”: 2.20462,
-                    “returnUnit”: “lbs”,
-                    “string”: “1 kilograms converts to 2.20462 pounds”
+            p(class="block code").
+                { <br>
+                    <span class="indent">“initNum”: 1,</span> <br>
+                    <span class="indent">“initUnit”: “kg”,</span> <br>
+                    <span class="indent">“returnNum”: 2.20462,</span><br>
+                    <span class="indent">“returnUnit”: “lbs”,</span><br>
+                    <span class="indent">“string”: “1 kilograms converts to 2.20462 pounds”</span><br>
                 }
 
             h3 Implementation
-            img(src="/img/implementation_demo.png", alt="implementation")
+            img(src="/img/implementation_demo.png", alt="implementation" class="demo_img")
 
             h3 Front-End
             include ./form
 
-            footer
-                p ©2020  Darbaz Ali
+    footer
+        p ©2020  
+            a(href="https://github.com/DarbazAli") Darbaz Ali
