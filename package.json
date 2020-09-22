@@ -1,0 +1,26 @@
+{
+  "name": "metric-imperial-converter",
+  "version": "1.0.0",
+  "description": "Metric Imperial Converter API Endpoint",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "Node",
+    "Express",
+    "Mocha",
+    "Chai",
+    "API"
+  ],
+  "author": "Darbaz Ali",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "chai": "^4.2.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mocha": "^8.1.3",
+    "pug": "^3.0.0"
+  }
+}
