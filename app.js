@@ -7,10 +7,20 @@ const express = require('express');
 const app = express();
 
 
+/* ========================================== 
+    SETUP TEMPLATE ENGINE
+========================================== */
+app.set('view engine', 'pug');
+app.set('views', 'views');
+
+
+/* ========================================== 
+    ROUTING
+========================================== */
 app
     .route('/')
     .get((req, res) => {
-        res.send('<h1>Hello Wordl!</h1>');
+        res.render('index')
     })
 
 
