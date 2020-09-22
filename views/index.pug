@@ -5,4 +5,41 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title Metric Imperial Converter
     body
-        h1 Metric/Imperial Converter API
+        .container
+
+            h1 Metric/Imperial Converter API
+            img(src="github_icon", alt="github icon" class="git_repo")
+
+            p An API Endpoint to convert Metric to Imperial units and vice versa.
+
+            h3 
+                span kg ⇄ lbs     
+                span km ⇄ mi     
+                span l ⇄ gal
+
+            h3 API URL
+            p ~/api/convert
+
+            h3 Examples Request
+            p.
+                ~/api/convert?input=4gal <br>
+                ~/api/convert?input=3.5L <br>
+                ~/api/convert?input=1.5/5mi <br>
+
+            h3 Example Response
+            p.
+                {
+                    “initNum”: 1,
+                    “initUnit”: “kg”,
+                    “returnNum”: 2.20462,
+                    “returnUnit”: “lbs”,
+                    “string”: “1 kilograms converts to 2.20462 pounds”
+                }
+
+            h3 Implementation
+            img(src="src", alt="implementation")
+
+            h3 Front-End
+
+            footer
+                p ©2020  Darbaz Ali
