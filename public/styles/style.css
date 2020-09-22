@@ -131,6 +131,20 @@ button:hover {
     background-color: #807fa7;
 }
 
+p#api_result {
+    margin-top: 20px;
+    width: 60%;
+    border-radius: 6px;
+    background: #f7f7f7;
+    padding: 15px 20px;
+    font-family: Roboto;
+    font-weight: normal;
+    font-size: 17px;
+    text-align: left;
+    color: #353741;
+
+}
+
 /*=====================================
     FOOTER
 ======================================*/

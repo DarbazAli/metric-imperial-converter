@@ -1,3 +1,4 @@
-form(action="/api/convert", method="get")
-    input(type="text", name="input" placeholder="km, mi, kg, lbs, l, gal")
+form(action="/api/convert", method="get" id="convertForm")
+    input(id="input_query" type="text", name="input" placeholder="km, mi, kg, lbs, l, gal")
     button(type="submit") Convert
+    p#api_result Result

@@ -11,7 +11,7 @@ function ConvertHandler() {
     this.getUnit = (input) => {
       const result = input.trim().match(/[a-zA-Z]+$/gi);
       const units = ['gal', 'lbs', 'mi', 'l', 'kg', 'km'];
-      return result && units.includes(result[0].toLowerCase()) ? result[0].toLowerCase() : 'invalid unit';
+      return result && units.includes(result[0].toLowerCase()) ? result[0].toLowerCase() : null;
     };
   
     this.getReturnUnit = (initUnit) => {

@@ -24,6 +24,10 @@ module.exports = app => {
         if ( !input ) {
             response.error = 'invalid number and unit'
         }
+        else if ( !inintNum && !initUnit) {
+            response.error = 'invalid number and unit'
+        }
+       
         else if ( inintNum && !initUnit ) {
             response.error = 'invalid unit'
         }
