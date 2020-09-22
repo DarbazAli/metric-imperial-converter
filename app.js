@@ -26,7 +26,7 @@ app.use(express.static(__dirname + '/public'))
 app
     .route('/')
     .get((req, res) => {
-        res.render('index')
+        res.render('index', {api_url: req.headers.host + '/api/convert'})
     })
 
 
