@@ -4,6 +4,7 @@ const log = console.log;
 
 // pull out packages
 const express = require('express');
+const compresssion = require('compression');
 const apiRoute = require('./server/api');
 const app = express();
 
@@ -20,7 +21,7 @@ app.set('views', 'views');
     USE MIDDLEWARES
 ========================================== */
 app.use(express.static(__dirname + '/public'))
-
+app.use(compresssion());
 /* ========================================== 
     ROUTING
 ========================================== */
